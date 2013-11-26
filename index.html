@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+<title>ngDefine Boilerplate - Angular Dynamic Module Loading via RequireJS</title>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.2/css/bootstrap.min.css" type="text/css" charset="utf-8">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.2/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script data-main="/js/app.admin.bootstrap" src="/js/lib/requirejs.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body>
+
+	<div id="wrap">
+		<div class="container">
+			<div class="page-header">
+				<h1>Test</h1>
+			</div>
+			
+			<div ng-controller="ctrlTop">
+				<h1 change-color="green">{{message}}</h1>
+			</div>	
+
+			<div ng-controller="ctrl">
+				<h1 change-color>{{message}}</h1>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
+
